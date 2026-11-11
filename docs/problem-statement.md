@@ -1,146 +1,137 @@
 # Problem Statement — DealLens
 
-**Project:** DealLens — Real Estate Investment Analyzer  
-**Version:** 0.2  
-**Status:** Draft — Awaiting User Validation  
-**Initial Market:** Germany  
+**Project:** DealLens — Real Estate Investment Analyzer
+**Version:** 0.3
+**Status:** Product Definition Approved — AI Approved
+**Initial Market:** Germany
 **Last Updated:** November 11, 2026
 
 ---
 
 ## 1. Background
 
-Buying a residential property as a long-term rental investment requires evaluating more than its advertised purchase price and potential rental income.
+Buying an apartment as a long-term rental investment requires evaluating more than its advertised purchase price and potential rental income.
 
-In Germany, investors must account for additional acquisition costs, financing obligations, ongoing ownership expenses, and potential periods without rental income.
+In Germany, investors must consider acquisition costs, financing obligations, ongoing ownership expenses, and potential rental vacancies.
 
-Property listings typically provide information such as price, location, living area, and rental income. However, this information alone is insufficient to assess the financial viability of an investment.
+Property listings typically provide information such as purchase price, location, living area, and rental income. However, this information alone does not provide a complete picture of a property's financial performance.
 
-Investors must combine property data with personal financing assumptions and cost estimates to understand the potential financial outcome.
+Investors must combine information from different sources and make assumptions about costs, financing, and expected income.
 
-Several investment calculators already address parts of this process. However, there may be an opportunity to make the overall evaluation more accessible, transparent, and understandable for beginners.
+Existing investment calculators already address many of these calculations. However, there may be an opportunity to make the evaluation process more understandable and transparent for beginners.
 
-**DealLens aims to help first-time investors evaluate the financial implications of purchasing a rental apartment through a structured, beginner-friendly analysis.**
+**DealLens aims to simplify preliminary rental property investment analysis through a structured, beginner-friendly experience.**
 
 ## 2. Target Users
 
 ### Primary Target User
 
-An individual living in Germany who is researching the purchase of their first residential rental apartment.
+An individual in Germany researching the purchase of their first residential apartment as a long-term rental investment.
 
 **Characteristics:**
 
-- Has little or no practical experience investing in rental properties.
-- Is actively exploring apartments on German real estate listing platforms.
-- Understands basic concepts such as purchase price and rental income.
-- Has limited knowledge of acquisition expenses, financing calculations, and investment profitability.
-- May purchase using personal savings, mortgage financing, or both.
-- Wants to understand the financial implications before contacting banks or committing to a purchase.
+- Has limited or no practical experience investing in rental properties.
+- Researches apartments through real estate listing platforms.
+- Understands basic concepts such as purchase price and monthly rent.
+- Has limited knowledge of acquisition expenses, financing calculations, and rental profitability.
+- May finance the purchase through personal savings, a mortgage, or both.
+- Wants to understand the financial implications before making a purchasing decision.
 
 ### Primary User Scenario
 
-A prospective investor discovers an apartment listed for €150,000 with an advertised monthly cold rent of €650.
+A prospective investor discovers an apartment in Leipzig advertised for €150,000.
 
-Before considering the purchase, the investor wants to understand:
+The apartment currently generates €650 in monthly cold rent.
 
-1. What is the estimated total acquisition cost?
-2. How much personal capital is needed?
-3. What are the expected monthly ownership expenses?
-4. Will rental income cover the estimated costs and mortgage payments?
-5. What do the estimated financial returns mean?
+Before proceeding, the investor wants to understand:
 
-The user wants an understandable preliminary assessment without creating a custom spreadsheet.
+1. What will the property actually cost, including acquisition expenses?
+2. How much personal capital will be required?
+3. What recurring expenses will remain the owner's responsibility?
+4. Will the rental income cover the expected ownership costs and mortgage payments?
+5. How reliable are the financial estimates?
 
-### Secondary Target Users
+The investor wants an understandable initial assessment without manually constructing financial spreadsheets.
 
-Small private investors who already own one or two rental properties and want to evaluate additional opportunities.
+### Secondary Users
 
-**Initial product focus:** First-time individual investors evaluating residential apartments for long-term rental income in Germany.
+Small private investors who already own one or two rental properties and want a structured way to assess additional opportunities.
+
+**Initial focus:** First-time private investors evaluating residential apartments for long-term rental income in Germany.
 
 ## 3. Problem
 
-First-time investors can find it difficult to evaluate whether a residential apartment is financially viable as a rental investment.
+First-time investors may struggle to determine whether a rental apartment represents a financially viable investment.
 
-The evaluation requires combining information from different sources, understanding unfamiliar financial concepts, and making assumptions about costs and future income.
+This evaluation requires combining information from different sources, interpreting financial concepts, and estimating expenses that may not be immediately available.
 
 ### Key Challenges
 
 **P1 — Incomplete understanding of acquisition costs**
 
-The advertised purchase price does not represent the total amount required to acquire a property.
+The advertised purchase price does not represent the total cost of purchasing a property.
 
-Investors must account for property transfer tax, notary fees, land registration, brokerage fees where applicable, and potential initial renovation expenses.
+Additional expenses may include property transfer tax, notary fees, land registration, brokerage fees, and initial renovation costs.
 
-**P2 — Difficulty estimating rental profitability**
+**P2 — Difficulty understanding rental profitability**
 
-Rental income alone does not represent profit.
+Rental income does not equal profit.
 
-Investors must distinguish rental revenue from costs borne by the landlord, including non-recoverable building expenses, administration, maintenance, and potential rental losses.
+Investors must account for recurring expenses, including property management, maintenance, non-recoverable operating costs, and potential rental losses.
+
+For German apartments, distinguishing landlord-borne expenses from costs recoverable from tenants is particularly important.
 
 **P3 — Unclear financing implications**
 
-For financed purchases, investors need to understand how loan amounts, interest rates, and repayment assumptions affect required upfront capital and monthly cash flow.
+Mortgage financing introduces additional financial obligations.
+
+Investors need to understand how loan amounts, interest rates, and repayment assumptions influence monthly payments and required upfront capital.
 
 **P4 — Difficulty interpreting financial metrics**
 
-Metrics such as gross rental yield, net rental yield, and monthly cash flow are not necessarily intuitive for beginners.
+Terms such as gross rental yield, net rental yield, and monthly cash flow may be unfamiliar to beginners.
 
-Without clear definitions, users may misinterpret calculations or compare results based on inconsistent assumptions.
+Without understandable explanations, users risk misinterpreting results or comparing calculations based on different assumptions.
 
-**P5 — Uncertainty about assumptions**
+**P5 — Incomplete or uncertain property information**
 
-Some financial information may be missing from property listings or based on estimates.
+Property listings may contain incomplete cost information or estimated rental income rather than contractual rent.
 
-Users need to distinguish known values from assumptions and understand how missing information affects the reliability of results.
+Investors need to understand which financial values are known, which are estimated, and how uncertainty affects the results.
 
 ### Core Problem Statement
 
-First-time rental property investors in Germany need a straightforward way to combine property information, acquisition costs, financing assumptions, and recurring expenses into an understandable financial evaluation.
+First-time rental property investors in Germany need an understandable way to evaluate total acquisition costs, financing requirements, rental profitability, and financial assumptions.
 
-Although existing tools offer investment calculations, it remains to be validated whether beginners can use those tools confidently and interpret their results correctly.
+Although existing tools provide many relevant calculations, it remains to be validated whether beginners can use them confidently and interpret their results correctly.
 
-**DealLens will focus on making preliminary investment analysis transparent, understandable, and consistent.**
+**DealLens will focus on transparent calculations, understandable explanations, and a structured preliminary investment evaluation.**
 
 ## 4. Current Alternatives
 
-Investors already have several options for evaluating residential properties.
+Investors currently use several methods to evaluate rental property investments.
 
-### Existing Solutions — Initial Research
+| Alternative                       | Existing capabilities                                            | Opportunity to investigate                                                        |
+| --------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Excel / Google Sheets             | Flexible financial models and custom calculations                | Does maintaining formulas make the process unnecessarily difficult for beginners? |
+| Interhyp Kapitalanlagerechner     | Cash flow, rental yield, and tax-oriented estimates              | Can beginners understand the inputs, assumptions, and results independently?      |
+| immocation Kalkulationstool       | Detailed Excel-based financial analysis for property investments | Is its complexity appropriate for users evaluating their first apartment?         |
+| InvestBud                         | Property investment calculations and analysis capabilities       | Could a guided workflow offer measurable usability advantages?                    |
+| Financial or real estate advisors | Professional assistance and contextual guidance                  | Which preliminary calculations do users prefer to perform independently?          |
 
-| Solution | Existing capabilities | Opportunity to investigate |
-|---|---|---|
-| Excel / Google Sheets | Flexible, customizable financial calculations | Does building and maintaining formulas create unnecessary effort for beginners? |
-| Interhyp Kapitalanlagerechner | Rental yield, cash flow, financing-related inputs, and tax estimates | How easily can first-time investors interpret its calculations? |
-| immocation Kalkulationstool | Extensive property and financing calculations, including advanced spreadsheet-based analysis | Is its level of detail appropriate for beginners? |
-| InvestBud | German property investment calculator with acquisition costs, yields, cash flow, and market information | What additional value could a guided analysis provide? |
-| Financial or real estate advisors | Professional assistance with financial and purchasing decisions | Which preliminary questions do users prefer to answer independently? |
+### Competitive Positioning
 
-### Preliminary Competitive Finding
+Existing products already calculate important investment metrics.
 
-Existing products already address many important financial calculations.
+DealLens therefore does not aim to differentiate itself through basic financial calculations alone.
 
-Therefore, DealLens should not position itself as the first or only solution for rental property profitability calculations.
+Instead, its proposed differentiation is:
 
-### Proposed Differentiation — Hypothesis
-
-DealLens may provide additional value through:
-
-- A guided workflow designed specifically for beginners.
-- Plain-language explanations of financial metrics.
-- Transparent calculation formulas and assumptions.
-- Clear separation of known information from estimated values.
-- A focused presentation of the financial information needed for an initial property assessment.
-
-**These are proposed differentiators, not validated competitive advantages.**
-
-### Research References
-
-- [Interhyp — Rental Property Calculator](https://www.interhyp.de/kapitalanlagerechner/)
-- [immocation — Tools and Downloads](https://hilfe.immocation.de/faq/tools-downloads)
-- [InvestBud — Real Estate Investment Calculator](https://www.investbud.de/)
-- [Finanztip — Property Acquisition Costs](https://www.finanztip.de/baufinanzierung/nebenkosten-hauskauf/)
-
-Research conducted: November 2026.
+1. **Beginner-oriented workflow:** Guide users through a focused preliminary analysis.
+2. **Explainable results:** Provide understandable definitions of financial metrics.
+3. **Transparent assumptions:** Distinguish supplied information, calculated values, and estimates.
+4. **Focused presentation:** Prioritize essential financial information rather than overwhelming users with advanced calculations.
+5. **Consistent calculations:** Use clearly documented financial rules and make limitations visible.
 
 ## 5. Goals and Success Criteria
 
@@ -148,209 +139,223 @@ Research conducted: November 2026.
 
 **G1 — Simplify preliminary investment evaluation**
 
-Allow users to calculate the essential financial metrics of one rental apartment without creating custom spreadsheets.
+Help users calculate essential financial metrics without creating or maintaining their own spreadsheets.
 
-**G2 — Improve transparency**
+**G2 — Improve financial transparency**
 
-Clearly present acquisition costs, required upfront capital, recurring ownership expenses, and estimated monthly cash flow.
+Clearly present acquisition costs, required upfront capital, recurring owner expenses, and estimated cash flow.
 
-**G3 — Improve comprehension**
+**G3 — Improve user comprehension**
 
-Help users understand what each financial metric represents and which assumptions influence its result.
+Help users understand financial metrics, calculation assumptions, and potential limitations.
 
 **G4 — Ensure calculation consistency**
 
-Produce predictable and verifiable results based on documented financial formulas and validated inputs.
+Produce predictable and verifiable financial results based on documented calculation rules.
+
+**G5 — Make uncertainty visible**
+
+Clearly distinguish known information from estimates and identify missing inputs that affect reliability.
 
 ### Initial Success Criteria
 
-The following targets are proposed for MVP usability testing.
+| Goal                | Proposed success criterion                                                                      | Verification                                          |
+| ------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Usability           | At least 4 of 5 test participants complete an analysis independently                            | Observed usability testing                            |
+| Efficiency          | At least 4 of 5 participants complete an analysis within 5 minutes using supplied property data | Task completion measurement                           |
+| Comprehension       | At least 4 of 5 participants correctly explain cash flow and gross rental yield                 | Post-task questions                                   |
+| Accuracy            | All approved calculation test cases produce expected results                                    | Automated tests using independently verified examples |
+| Transparency        | Every financial metric has an accessible definition and identifiable assumptions                | Acceptance review                                     |
+| Missing information | Unknown material expenses are never silently interpreted as zero                                | Input validation and acceptance tests                 |
 
-| Goal | Success criterion | Measurement |
-|---|---|---|
-| Usability | At least 4 of 5 test participants complete an analysis independently | Observed usability test |
-| Efficiency | At least 4 of 5 participants finish within 5 minutes when provided with complete input data | Task completion time |
-| Comprehension | At least 4 of 5 participants correctly explain cash flow and gross rental yield | Post-task questions |
-| Calculation accuracy | All approved financial test cases produce expected results | Automated tests against independently verified calculations |
-| Transparency | Every displayed financial metric has an accessible definition and its assumptions are identifiable | Product acceptance review |
+These are preliminary validation targets, not demonstrated outcomes.
 
-These are initial acceptance targets, not evidence of existing user demand.
-
-A small usability study will provide preliminary findings, not statistically representative conclusions.
+Testing with five participants will produce exploratory findings rather than statistically representative evidence.
 
 ## 6. Scope
 
 ### MVP Objective
 
-Enable a first-time investor to evaluate the estimated financial performance of a single residential rental apartment in Germany.
+Enable an investor to complete a transparent financial assessment of one residential rental apartment in Germany.
 
-The first version will support one complete analysis, from entering property information to understanding the financial results.
+The MVP focuses on a single complete analysis, without requiring an account or saved property records.
 
-### Included in MVP
+### Core Capabilities
 
-**F1 — Property Information**
+**1. Property Information**
 
-Users can manually enter:
+Users can manually enter essential property details, including purchase price, location, living area, and rental income.
+
+The application must distinguish between:
+
+- **Contractual rent:** Rent currently agreed under an existing tenancy.
+- **Estimated rent:** Expected rental income for a vacant property or a proposed future tenancy.
+
+Estimated rental income must be clearly identified as an assumption rather than guaranteed revenue.
+
+**2. Acquisition Costs**
+
+The application estimates total initial investment costs, including:
 
 - Property purchase price
-- German federal state
-- Property location or descriptive name
-- Living area
-- Monthly cold rent
+- Property transfer tax
+- Notary and land registration fees
+- Applicable brokerage fees
+- Additional one-time costs entered by the user
 
-**F2 — Acquisition Costs**
+Suggested acquisition-cost values must be identified as estimates and be adjustable where appropriate.
 
-The system calculates or estimates:
+The application distinguishes acquisition transaction costs from additional initial investment expenses, such as renovation work.
 
-- Property transfer tax based on the selected federal state
-- Notary and land registration costs
-- Brokerage fees, where applicable
-- Additional upfront costs entered by the user
-- Total estimated acquisition cost
+**3. Financing**
 
-Automatically suggested values must be labeled as estimates and be adjustable where appropriate.
+The application supports:
 
-**F3 — Financing**
+- Cash purchases
+- Purchases financed through a standard mortgage with initial annuity payments
 
-Users can choose between:
+For financed purchases, users provide the loan amount, nominal annual interest rate, and initial repayment rate.
 
-- Cash purchase
-- Mortgage-financed purchase
+The application estimates the initial monthly loan payment and the personal capital required.
 
-For financed purchases, users provide the loan amount, annual interest rate, and initial repayment rate.
+Required upfront capital is based on the total initial investment less the loan amount, subject to valid financing assumptions.
 
-The system estimates monthly loan payments and required upfront capital.
+The calculation must make clear that a loan may finance only part of the purchase or associated expenses. It does not assume banks will approve a proposed financing structure.
 
-**F4 — Recurring Property Expenses**
+**MVP limitation:** Only an initial mortgage-payment estimate is provided. A detailed amortization schedule, future interest changes, and refinancing are excluded.
 
-Users can enter landlord-borne expenses, including non-recoverable Hausgeld, maintenance provisions, and an optional vacancy allowance.
+**4. Recurring Ownership Expenses**
 
-The system must distinguish recoverable operating costs from expenses that remain the landlord's responsibility, avoiding double counting.
+The application accounts for the ongoing expenses borne by the property owner.
 
-**F5 — Financial Calculations**
+For German apartments, the expense model must distinguish:
 
-The system calculates:
+- **Recoverable operating costs:** Costs that may be charged to tenants under applicable rules and contractual arrangements.
+- **Non-recoverable operating and administration costs:** Expenses remaining the landlord's responsibility.
+- **Maintenance reserve contributions:** Owner payments toward the condominium association's maintenance reserve.
+- **Additional maintenance expenses:** Separate costs not already included elsewhere.
 
-- Total acquisition investment
+The application must avoid double counting expenses, particularly where maintenance reserve contributions are already included in the supplied Hausgeld breakdown.
+
+In the simplified cold-rent-based model, recoverable operating costs and corresponding tenant advances are excluded consistently rather than treating one side as profit or expense.
+
+Maintenance reserves are treated as cash outflows for the MVP, not as equivalent to expenses for tax purposes.
+
+**5. Missing Information and Assumptions**
+
+The application distinguishes between:
+
+- Required inputs needed for valid calculations.
+- Optional inputs that users may explicitly set to zero.
+- Estimated values that users can review or adjust.
+- Unknown information that affects result reliability.
+
+Unknown material expenses must not automatically be treated as €0.
+
+When information is insufficient, the application must request clarification, require an explicit assumption, or mark the affected result as incomplete.
+
+Every estimated or user-supplied assumption must be identifiable in the results.
+
+**6. Financial Results**
+
+The application provides a clear overview of:
+
+- Total initial investment
 - Required upfront capital
+- Initial estimated mortgage payment
 - Gross rental yield
 - Net rental yield before financing and personal income taxes
-- Estimated monthly cash flow after operating expenses and loan payments, but before personal income taxes
+- Estimated monthly cash flow after recurring owner expenses and loan payments, before personal income taxes
 
-The exact formulas, calculation periods, and treatment of assumptions will be documented separately in `calculation-rules.md`.
+The calculation model must differentiate between investment profitability and monthly cash flow.
 
-**F6 — Investment Results**
+It must also clarify that mortgage principal repayment reduces available cash but is not equivalent to an operating expense.
 
-The system displays:
-
-- A summary of the estimated acquisition costs
-- Estimated initial cash requirement
-- Monthly rental income and owner-borne expenses
-- Estimated monthly cash flow
-- Gross and net rental yields
-- Explanations of the financial metrics
-- Warnings about missing or estimated inputs
+Detailed formula definitions, assumptions, rounding rules, and independently verified examples will be maintained in `calculation-rules.md`.
 
 ### MVP Boundaries
 
-- One property analysis at a time.
-- Manual information entry.
-- No user account required.
-- No persistent saving of analyses.
-- No property comparison.
-- No automated financial recommendation.
-- No personalized income tax calculation.
+The first version will:
+
+- Evaluate one property at a time.
+- Use manually entered property information.
+- Support cash purchases and simplified mortgage financing.
+- Show transparent calculations and explanations.
+- Require no user account.
+- Operate without persistent property storage.
+- Avoid automatic buy/sell recommendations.
 
 ### Expected MVP Outcome
 
-A user enters the relevant information for one apartment and receives a transparent financial overview of the potential purchase.
+A user enters information about an apartment and receives a preliminary financial assessment.
 
-The application helps users understand the financial numbers, but does not determine whether they should buy the property.
+The application explains:
+
+- The estimated cost of acquiring the property.
+- The initial personal capital required.
+- The expected recurring financial obligations.
+- The estimated monthly cash flow.
+- The meaning and limitations of the calculated returns.
+
+**DealLens supports financial understanding. It does not guarantee returns, confirm financing eligibility, or determine whether an investment should be purchased.**
 
 ## 7. Out of Scope
 
-The following capabilities will not be included in the MVP.
+The following capabilities are excluded from the MVP.
 
 ### Product Features
 
-- User authentication and accounts
-- Persistently saving property analyses
-- Comparing multiple properties
-- Portfolio management
-- Property listing scraping or automatic imports
-- AI-based investment recommendations
+- Authentication and user accounts
+- Persistently saved property analyses
+- Side-by-side property comparisons
+- Property portfolio management
+- Automatic listing extraction or scraping
+- AI-generated investment recommendations
 - Automated property valuations
-- Integration with mortgage providers or banks
-- Automatically generated investment reports
-- Advanced scenario analysis
+- Bank and mortgage-provider integrations
+- Automated PDF investment reports
+- Advanced scenario simulations
 
 ### Advanced Financial Features
 
 - Personalized income tax calculations
 - Depreciation and tax deduction modeling
 - Detailed mortgage amortization schedules
-- Mortgage refinancing simulations
-- Long-term property value forecasts
+- Interest-rate refinancing simulations
+- Long-term property appreciation forecasts
 - Multi-year cash flow projections
 - Complex renovation investment modeling
-- Automated investment scoring
+- Automated investment scores
+- Detailed liquidity and emergency-reserve planning
 
-These capabilities may be considered for future versions after validating the core analysis experience.
+### Proposed Future Releases
 
-## 8. Assumptions and Open Questions
+**MVP v0 — Core Analysis**
 
-### Product Hypotheses
+Complete one preliminary financial analysis with transparent results.
 
-| ID | Hypothesis | Proposed validation |
-|---|---|---|
-| H1 | First-time investors struggle to combine acquisition costs, financing, and rental expenses into one assessment | Interview prospective investors about their existing process |
-| H2 | Beginners find at least some existing tools difficult to understand or interpret | Conduct comparative usability tests with existing calculators |
-| H3 | Plain-language metric explanations improve user understanding | Test comprehension with and without explanations |
-| H4 | Users are willing to enter property information manually | Observe users completing the proposed workflow |
-| H5 | A single-property analysis provides sufficient initial value without saved analyses or comparison features | Ask users to evaluate the usefulness of the completed analysis |
+**v1 — Saved Investments**
 
-### Open Questions
+Allow users to create, save, reopen, edit, and manage property analyses.
 
-**Users and Product**
+**v2 — Comparison and Risk Assessment**
 
-- Which part of investment evaluation creates the most confusion?
-- Which financial metrics do beginners consider essential?
-- Is manually entering property information acceptable?
-- Do users need saved analyses earlier than currently planned?
+Compare saved properties and explore how changing assumptions may affect investment performance.
 
-**Calculations**
+**Later Versions**
 
-- Which assumptions should the system suggest by default?
-- How should missing cost information be handled?
-- How should rental vacancy allowances be incorporated?
-- How should acquisition costs affect net yield?
-- How should German Hausgeld categories be represented without double counting?
-- Which calculation examples should serve as independently verified references?
+Investigate advanced financing, longer-term projections, market data, and other features based on demonstrated user needs.
 
-**Competitive Positioning**
-
-- Which existing tools are easiest for beginners to use?
-- What problems remain after using those tools?
-- Does DealLens's guided experience provide a measurable improvement?
-
-### Validation Activities Before MVP Completion
-
-1. Review at least three existing German real estate investment tools using the same example property.
-2. Conduct exploratory interviews with at least five prospective first-time investors.
-3. Create independently verified reference calculations for a cash purchase and a financed purchase.
-4. Test the core DealLens workflow with five representative participants.
-5. Review the MVP scope based on findings and update the product requirements accordingly.
-
-The research may show that some proposed features are unnecessary or that the initial product direction needs adjustment.
+These releases are preliminary planning boundaries, not committed delivery dates.
 
 ---
 
 ## Product Vision
 
-**Make real estate investment analysis understandable for first-time property investors.**
+**Make rental property investment analysis understandable, transparent, and accessible to first-time investors.**
 
-DealLens aims to help users move from a property listing to a transparent financial assessment by understanding purchase costs, financing obligations, rental profitability, and the assumptions behind the calculations.
+DealLens helps users move from a property listing to a structured preliminary financial assessment by explaining acquisition costs, financing obligations, rental profitability, and the assumptions behind the numbers.
 
-The long-term vision is to support investors throughout the process of evaluating and comparing real estate opportunities.
+The long-term vision is to help individual investors evaluate, compare, and understand rental property investment opportunities.
 
-**The initial priority is to make the analysis of one rental apartment clear, consistent, and reliable.**
+**The first milestone is simple: make the financial evaluation of one rental apartment clear, consistent, and reliable.**
